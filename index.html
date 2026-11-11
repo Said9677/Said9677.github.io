@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Saeed Amr Albarak Alameri: founder and product owner of MIRAS, an Arabic-first marketplace for Hadramout, Yemen. STAR case study, skills, and links.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saeed Amr Albarak Alameri">
+<meta property="og:description" content="Founder and product owner of MIRAS, an Arabic-first marketplace for Hadramout, Yemen. STAR case study, skills, and links.">
+<meta name="theme-color" content="#a8512f">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><title>Saeed Amr Albarak Alameri</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: a quiet single-column résumé page with one wide case study.
+   Palette comes from the subject: Hadramout mud-brick clay (accent) on deep ink,
+   with MIRAS green as the secondary signal. */
+:root{
+  --bg:#f6f4f0;
+  --surface:#ffffff;
+  --ink:#16201c;
+  --muted:#5b6660;
+  --line:#dcd8d0;
+  --clay:#a8512f;
+  --clay-ink:#ffffff;
+  --green:#1e7a45;
+  --tint:#efe9df;
+  --font-display:"Space Grotesk","Segoe UI",system-ui,sans-serif;
+  --font-body:"Inter","Segoe UI",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1714;
+    --surface:#16211d;
+    --ink:#eef0ea;
+    --muted:#a2aea6;
+    --line:#2a3832;
+    --clay:#e08a62;
+    --clay-ink:#1a0f0a;
+    --green:#4fc07f;
+    --tint:#1b2722;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1714;
+  --surface:#16211d;
+  --ink:#eef0ea;
+  --muted:#a2aea6;
+  --line:#2a3832;
+  --clay:#e08a62;
+  --clay-ink:#1a0f0a;
+  --green:#4fc07f;
+  --tint:#1b2722;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font:16px/1.65 var(--font-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 56px;
+}
+a{color:inherit}
+.wrap{max-width:960px;margin-inline:auto}
+h1,h2,h3{font-family:var(--font-display);line-height:1.15;margin:0;text-wrap:balance}
+p{margin:0}
+.eyebrow{font:500 12px/1 var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* top bar */
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap}
+.mark{font:700 17px var(--font-display);letter-spacing:.01em;text-decoration:none;min-width:0}
+.mark span{color:var(--clay)}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:14px;color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus-visible{color:var(--ink);border-bottom-color:var(--clay);outline:none}
+
+/* hero */
+.hero{padding-block:56px 40px;display:grid;gap:24px}
+.hero h1{font-size:clamp(34px,6vw,56px);font-weight:700;max-width:18ch}
+.hero h1 em{font-style:normal;color:var(--clay)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:60ch}
+.links{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.btn:hover,.btn:focus-visible{border-color:var(--clay);outline:none}
+.btn.primary{background:var(--clay);border-color:var(--clay);color:var(--clay-ink)}
+.btn.primary:hover,.btn.primary:focus-visible{filter:brightness(1.06)}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;border-style:dashed}
+.btn svg{width:18px;height:18px;fill:currentColor;flex:none}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;border-block:1px solid var(--line);margin-top:8px}
+.facts div{padding:18px 20px 18px 0;min-width:0}
+.facts b{display:block;font:600 26px var(--font-display);font-variant-numeric:tabular-nums}
+.facts span{font-size:13px;color:var(--muted)}
+
+/* sections */
+section{padding-block:56px 8px;scroll-margin-top:16px}
+.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.sec-head h2{font-size:clamp(26px,4vw,34px)}
+.sec-head p{color:var(--muted);max-width:62ch}
+
+/* case study (STAR) */
+.star{display:grid;gap:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.row{display:grid;grid-template-columns:160px 1fr;gap:24px;padding:26px 28px}
+.row+.row{border-top:1px solid var(--line)}
+.row h3{font-size:15px;font-family:var(--font-mono);font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--clay);padding-top:3px}
+.row h3 small{display:block;font-family:var(--font-body);text-transform:none;letter-spacing:0;color:var(--muted);font-size:13px;margin-top:6px}
+.row p+p,.row ul{margin-top:12px}
+.row ul{padding-left:20px;display:grid;gap:8px}
+.row li::marker{color:var(--clay)}
+.row > div{min-width:0}
+
+/* architecture figure */
+figure{margin:28px 0 0;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--tint)}
+figure svg{display:block;width:100%;height:auto}
+figure figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
+svg .box{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+svg .core{fill:var(--surface);stroke:var(--green);stroke-width:2}
+svg text{font:500 13px var(--font-body);fill:var(--ink)}
+svg .sm{font-size:11.5px;fill:var(--muted)}
+svg .line{stroke:var(--muted);stroke-width:1.5;fill:none}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:22px;min-width:0}
+.card h3{font-size:18px;margin-bottom:10px}
+.card ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--muted);font-size:15px}
+.card li::marker{color:var(--clay)}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.stack span{font:500 13px var(--font-mono);padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+.note{margin-top:14px;font-size:13px;color:var(--muted)}
+
+/* contact */
+.contact{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:28px;display:grid;gap:18px}
+.contact h2{font-size:clamp(24px,3.6vw,30px)}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+
+@media (max-width:640px){
+  .row{grid-template-columns:1fr;gap:10px;padding:22px 20px}
+  .hero{padding-block:36px 28px}
+  .facts div{padding-right:12px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="bar">
+    <a class="mark" href="#top" id="top">Saeed Amr Albarak Alameri<span>.</span></a>
+    <nav aria-label="Sections">
+      <a href="#case-study">MIRAS case study</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="eyebrow">Saeed Amr Albarak Alameri · Founder &amp; product owner, MIRAS</p>
+      <h1>I take a local marketplace from idea to <em>Google Play</em>.</h1>
+      <p class="lead">I lead MIRAS, an Arabic-first marketplace for Hadramout, Yemen. My work covers product decisions, release management, testing and backend safety, built together with an AI coding assistant (Claude Code).</p>
+      <div class="links">
+        <a class="btn primary" href="#case-study">Read the case study</a>
+        <a class="btn" href="https://github.com/Said9677" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <span class="btn" id="li-hero" aria-disabled="true" title="LinkedIn link will be added before publishing">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </span>
+      </div>
+      <div class="facts" role="list">
+        <div role="listitem"><b>3 roles</b><span>Customer, merchant and driver apps in one Flutter codebase</span></div>
+        <div role="listitem"><b>566</b><span>Automated tests passing on the app today</span></div>
+        <div role="listitem"><b>1.0.0</b><span>Live on Google Play internal testing</span></div>
+        <div role="listitem"><b>AR / EN</b><span>Arabic right-to-left and English, plus dark mode</span></div>
+      </div>
+    </div>
+
+    <section id="case-study" aria-labelledby="cs-title">
+      <div class="sec-head">
+        <p class="eyebrow">Featured project</p>
+        <h2 id="cs-title">MIRAS: a marketplace for Hadramout</h2>
+        <p>Shown as a STAR case study: situation, task, action, result. MIRAS is a real product with a live website. The app source is in a private repository.</p>
+      </div>
+
+      <div class="star">
+        <div class="row">
+          <h3>Situation<small>The context</small></h3>
+          <div>
+            <p>MIRAS is built for how people in Hadramout buy and sell: Arabic first, cash on delivery, and prices in Yemeni rial or Saudi riyal. It already ran as a website on Supabase, and the next step was a mobile app.</p>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Task<small>What I had to deliver</small></h3>
+          <div>
+            <p>Launch an Android app for customers, merchants and drivers on the same backend as the live website. No duplicated business logic, no new database, and no risk to the production site.</p>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Action<small>What I did</small></h3>
+          <div>
+            <ul>
+              <li><b>Set the rules first.</b> Anything touching money, security, the server or production needs a written plan and my approval before it is built.</li>
+              <li><b>Built the app in Flutter</b> with customer, merchant and driver roles, Arabic and English strings, and dark mode.</li>
+              <li><b>Protected cash on delivery</b> with a per-order handover code, and kept customer phone numbers and addresses hidden from merchants.</li>
+              <li><b>Kept dev and production apart:</b> separate Supabase projects, and the app refuses to start if its build flavor and project do not match.</li>
+              <li><b>Tested it:</b> 566 automated tests, including guards that block hard-coded text, off-palette colors and unsafe automatic retries on writes. I also tested on a real phone for every change.</li>
+              <li><b>Prepared the release:</b> signing-key backups, database backups, a privacy policy, a data-safety declaration and an account-deletion path.</li>
+              <li><b>Coordinated the website:</b> changes go through pull requests, a release manifest with file hashes, and a verifier that runs before production. I used this flow to bring the owner panel's add-product form in line with the merchant form.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <h3>Result<small>Where it stands</small></h3>
+          <div>
+            <ul>
+              <li>Version 1.0.0 is published to the Google Play internal testing track and is available to invited testers.</li>
+              <li>The closed-testing phase (12 testers for 14 days) is the next gate, and I am recruiting testers now.</li>
+              <li>The owner panel now adds products with the same currency, condition, type and location options merchants have. It is live on the production site.</li>
+              <li>Project rules keep secrets out of the repositories, and every release gate is written down.</li>
+            </ul>
+            <p class="note">The app is not yet in public release, so there are no public download or user numbers to quote.</p>
+          </div>
+        </div>
+      </div>
+
+      <figure>
+        <svg viewBox="0 0 760 250" role="img" aria-labelledby="arch-t arch-d">
+          <title id="arch-t">MIRAS architecture</title>
+          <desc id="arch-d">A Flutter Android app and a website both talk to one Supabase backend that holds the database, row-level security and server functions. Netlify hosts the website and the invoice PDF function.</desc>
+          <rect class="box" x="20" y="30" width="200" height="70" rx="10"/>
+          <text x="120" y="60" text-anchor="middle">Flutter Android app</text>
+          <text class="sm" x="120" y="80" text-anchor="middle">customer · merchant · driver</text>
+          <rect class="box" x="20" y="150" width="200" height="70" rx="10"/>
+          <text x="120" y="180" text-anchor="middle">MIRAS website</text>
+          <text class="sm" x="120" y="200" text-anchor="middle">shop · merchant · driver · owner</text>
+          <rect class="core" x="320" y="70" width="230" height="110" rx="12"/>
+          <text x="435" y="105" text-anchor="middle">Supabase backend</text>
+          <text class="sm" x="435" y="128" text-anchor="middle">Postgres · row-level security</text>
+          <text class="sm" x="435" y="148" text-anchor="middle">server functions (RPC) · storage</text>
+          <rect class="box" x="595" y="150" width="155" height="70" rx="10"/>
+          <text x="672" y="180" text-anchor="middle">Netlify</text>
+          <text class="sm" x="672" y="200" text-anchor="middle">hosting · PDF invoices</text>
+          <path class="line" d="M220 65 H270 V110 H320"/>
+          <path class="line" d="M220 185 H270 V140 H320"/>
+          <path class="line" d="M595 185 H572 V160 H550"/>
+        </svg>
+        <figcaption>One backend, two clients. The app reuses the website's database and rules, so there is a single source of truth.</figcaption>
+      </figure>
+    </section>
+
+    <section id="skills" aria-labelledby="sk-title">
+      <div class="sec-head">
+        <p class="eyebrow">What I do</p>
+        <h2 id="sk-title">Skills, grounded in MIRAS</h2>
+        <p>Each item comes from work I did on this project.</p>
+      </div>
+      <div class="skills">
+        <div class="card">
+          <h3>Product ownership</h3>
+          <ul>
+            <li>Scope and priorities, including what not to build</li>
+            <li>Parity checks between the website and the app</li>
+            <li>Decisions on pricing, currency and delivery rules</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Release management</h3>
+          <ul>
+            <li>Google Play internal and closed testing</li>
+            <li>Signing keys, backups and release checklists</li>
+            <li>Privacy policy, data safety and account deletion</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quality and testing</h3>
+          <ul>
+            <li>On-device testing and bug reports with evidence</li>
+            <li>Automated test guards for text, colors and retries</li>
+            <li>Verification of data after each change</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Backend governance</h3>
+          <ul>
+            <li>Supabase with row-level security and server functions</li>
+            <li>Separate dev and production environments</li>
+            <li>Approval gates for server and money changes</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Bilingual products</h3>
+          <ul>
+            <li>Arabic right-to-left and English interfaces</li>
+            <li>Local wording for Yemeni shoppers and merchants</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AI-assisted development</h3>
+          <ul>
+            <li>Directing Claude Code with plans and acceptance checks</li>
+            <li>Reviewing diffs, tests and previews before release</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack" aria-label="Technologies used in MIRAS">
+        <span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Supabase</span><span>PostgreSQL</span><span>Netlify</span><span>GitHub</span><span>Google Play Console</span>
+      </div>
+      <p class="note">These are the technologies in the MIRAS stack. I direct and verify the work; Claude Code writes most of the code.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="ct-title">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Links</p>
+          <h2 id="ct-title">See the work, then get in touch.</h2>
+        </div>
+        <p class="lead">The MIRAS website is live. For the app source or a walkthrough, reach me through GitHub or LinkedIn.</p>
+        <div class="links">
+          <a class="btn primary" href="https://miras-hud.netlify.app" target="_blank" rel="noopener">MIRAS website</a>
+          <a class="btn" href="https://github.com/Said9677" target="_blank" rel="noopener">GitHub · Said9677</a>
+          <span class="btn" id="li-contact" aria-disabled="true" title="LinkedIn link will be added before publishing">LinkedIn</span>
+        </div>
+        <p class="note" style="margin:0">github.com/Said9677 · linkedin.com/in/saeed-al-ameri-246a3635b · miras-hud.netlify.app</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Saeed Amr Albarak Alameri</span>
+    <span>Built for application review. All project facts are from the MIRAS repositories and release records.</span>
+  </footer>
+</div>
+
+<script>
+/* LinkedIn stays disabled until a real profile URL is set here (never a placeholder link). */
+var PROFILE = { linkedin: "https://www.linkedin.com/in/saeed-al-ameri-246a3635b/" };
+(function () {
+  if (!PROFILE.linkedin) return;
+  ["li-hero", "li-contact"].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var a = document.createElement("a");
+    a.className = el.className;
+    a.href = PROFILE.linkedin;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.innerHTML = el.innerHTML;
+    el.replaceWith(a);
+  });
+})();
+</script>
+</body>
+</html>
